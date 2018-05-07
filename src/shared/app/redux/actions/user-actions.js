@@ -1,5 +1,5 @@
 import { Types } from '../constants/user-types';
-import Request from 'axios';
+import axios from 'axios';
 
 export function getName(id) {
     return async function (dispatch, getState) {
@@ -8,5 +8,5 @@ export function getName(id) {
     }
 }
 function getUserFromAPI(id) {
-    return Request.get(`https://jsonplaceholder.typicode.com/users/${id}`);
+    return axios.get(`https://jsonplaceholder.typicode.com/users/${id}`);
 }
