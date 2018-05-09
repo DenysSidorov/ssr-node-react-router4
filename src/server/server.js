@@ -6,7 +6,7 @@ import path from 'path';
 import App from '../shared/app/app.jsx';
 
 const app = express();
-app.use(express.static(path.join(__dirname, '/dist/')));
+app.use(express.static(path.join(__dirname, '/dist')));
 import {render} from 'react-dom';
 import {Provider} from 'react-redux';
 import {createStore, applyMiddleware} from 'redux';
