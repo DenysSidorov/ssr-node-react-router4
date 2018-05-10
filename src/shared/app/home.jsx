@@ -12,7 +12,7 @@ class Home extends Component {
                     <meta charSet="utf-8" />
                     <title>Home</title>
                 </Helmet>
-                <strong>Home 7</strong>
+                <strong>Home</strong>
             </div>
         );
     }

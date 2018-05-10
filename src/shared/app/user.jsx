@@ -6,10 +6,10 @@ import * as actions from './redux/actions/user-actions'
 
 class User extends Component {
     static fetchData({ store }) {
-        return store.dispatch(actions.getName(1));
+        return store.dispatch(actions.getName(3));
     }
     componentDidMount() {
-        this.props.getName(1);
+        this.props.getName(3);
     }
     render() {
         return (
